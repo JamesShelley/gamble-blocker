@@ -1,13 +1,4 @@
-function blockRequest(details) {
-    return {cancel: true};
-}
-
-function updateFilters(urls) {
-    if(chrome.webRequest.onBeforeRequest.hasListener(blockRequest))
-        chrome.webRequest.onBeforeRequest.removeListener(blockRequest);
-    chrome.webRequest.onBeforeRequest.addListener(blockRequest, 
-        {urls: [
-           "*://*.bet365.com/*", 
+{"*://*.bet365.com/*", 
            "*://*.888casino.com/*",
            "*://*.coral.co.uk/*",
            "*://*.betway.com/*",
@@ -165,67 +156,9 @@ function updateFilters(urls) {
            "*://*.zarcasino.co.za/*",
            "*://*.10bet.co.uk/*",
            "*://*.123bet.com/*",
-           "*://*.manhattanslots.com/*",
-           "*://*.miamiclubcasino.im/*",
-           "*://*.miamiclubcasino.org/*",
-           "*://*.newfreespinsnodeposit.com/*",
-           "*://*.vegascrestcasino.ag/*",
-           "*://*.uptownpokies.com/*",
-           "*://*.bovegas.com/*",
-           "*://*.bovegascasinomobile.com/*",
-           "*://*.goldenlionscasino.com/*",
-           "*://*.goldenlioncasino.co.uk/*",
-           "*://*.slotsofvegas.com/*",
-           "*://*.planet7casino.com/*",
-           "*://*.lionwins.com/*",
-           "*://*.redstagcasino.eu/*",
-           "*://*.freespin.com/*",
-           "*://*.audfairgocasino.com/*",
-           "*://*.ignitioncasino.eu/*",
-           "*://*.twoupcasino.com/*",
-           "*://*.jackpotcafe.co.uk/*",
-           "*://*.cafecasino.lv/*",
-           "*://*.eclipsecasino.com/*",
-           "*://*.bovada.lv/*",
-           "*://*.slots.lv/*",
-           "*://*.supernovacasino.com/*",
-           "*://*.supernova.im/*",
-           "*://*.ragingbullslots.com/*",
-           "*://*.ragingbullcasino.com/*",
-           "*://*.cherrygoldcasino.com/*",
-           "*://*.nonstopbonus.com/*",
-           "*://*.luckyredcasino.com/*",
-           "*://*.casinomax.com/*",
-           "*://*.roaring21.com/*",
-           "*://*.roaring-21.com/*",
-           "*://*.roaring21.eu/*",
-           "*://*.wfcasino.com/*",
-           "*://*.coolcat-casino.com/*",
-           "*://*.casinobonus2.co/*",
-           "*://*.uptownaces.eu/*",
-           "*://*.thediamondcasinoandresort.com/*",
-           "*://*.diamondreels.com/*",
-           "*://*.nodepositfriend.com/*",
-           "*://*.vegasspins.com/*",
-           "*://*.royalacecasino.com/*",
-           "*://*.cherryjackpot.com/*",
-           "*://*.cherryjackpotcasino.com/*",
-           "*://*.allfreechips.com/*",
-           "*://*.casinosuperlines.com/*",
-           "*://*.casinosuperlines.net/*",
-           "*://*.mars.casino/*",
-           "*://*.7bitcasino.com/*",
-           "*://*.wixstars.com/*",
-           "*://*.pocketwin.co.uk/*",
-           "*://*.wildslots.com/*",
            "*://*.letsplayslots.com/*",
            "*://*.letsplayslots.com/*",
            "*://*.letsplayslots.com/*",
            "*://*.letsplayslots.com/*",
            "*://*.letsplayslots.com/*",
-           "*://*.letsplayslots.com/*",
-        ]
-    }, ['blocking']);
-}
-
-updateFilters();
+         }
