@@ -1,7 +1,7 @@
 {
   "name": "Gamble Block",
-  "description": "Helping manage gambling addictions.",
-  "version": "0.9",
+  "description": "Helping combat gambling addictions by blocking gambling websites from being loaded.",
+  "version": "1.0",
   "permissions": [
     "webRequestBlocking",
     "webRequest",
